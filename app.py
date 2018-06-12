@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 
-from dotenv import load_dotenv, find_dotenv
-load_dotenv(find_dotenv())
+#from dotenv import load_dotenv, find_dotenv
+#load_dotenv(find_dotenv())
 
 import os
 from datetime import datetime, timedelta
