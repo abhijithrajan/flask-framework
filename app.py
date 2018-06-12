@@ -87,6 +87,10 @@ def make_plot():
                plot_height=400, plot_width=700,
                tools=[hover]
               )
+
+    if app.vars['feature'] == []:
+        p.circle('date', 'close', size=3, alpha=0.8, source=source, color='blue')
+        p.line('date', 'close', source=source, color='red', legend='Closing price')
     
     if 'open' in app.vars['features']:
         p.circle('date', 'open', size=3, alpha=0.8, source=source, color='red')
