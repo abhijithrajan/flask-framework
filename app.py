@@ -59,8 +59,6 @@ def make_plot():
 
     query = "{}ticker={}&date={}&api_key={}".format(query_url,stock_name,date_label[:-1],quandl_api_key)
 
-    print(query)
-
     r = requests.get(query)
     data = r.json()
 
@@ -112,7 +110,7 @@ def make_plot():
 
     script, div = components(p)
 
-    return render_template("graph.html", the_div=div, the_script=script)
+    return render_template("graph.html", symbol=stock_name, the_div=div, the_script=script)
 
 @app.route('/about')
 def about():
