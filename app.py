@@ -47,9 +47,6 @@ def make_plot():
     start = app.vars['start'] #datetime.datetime.now()
     stop = app.vars['stop'] #end + dateutil.relativedelta.relativedelta(months=-12)
 
-    print('{:%Y-%m-%d},'.format(start) , '{:%Y-%m-%d},'.format(stop), '{:%Y-%m-%d},'.format(start+timedelta(1)))
-
-
     date_label = ""
     inc_date = start
     while inc_date <= stop:
