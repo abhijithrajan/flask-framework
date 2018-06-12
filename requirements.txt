@@ -1,8 +1,8 @@
 gunicorn==19.7.1
 requests==2.18.4
-pandas
-bokeh
+pandas==0.20.3
+bokeh==0.12.7
 dill
-flask
+flask==0.12.2
 pip
 
