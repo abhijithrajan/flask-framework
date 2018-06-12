@@ -90,7 +90,7 @@ def make_plot():
 
     if app.vars['features'] == []:
         p.circle('date', 'close', size=3, alpha=0.8, source=source, color='blue')
-        p.line('date', 'close', source=source, color='red', legend='Closing price')
+        p.line('date', 'close', source=source, color='blue', legend='Closing price')
     
     if 'open' in app.vars['features']:
         p.circle('date', 'open', size=3, alpha=0.8, source=source, color='red')
