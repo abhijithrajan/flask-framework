@@ -5,5 +5,3 @@ flask
 jinja2
 pip
 simplejson
-python-dotenv
-requests
