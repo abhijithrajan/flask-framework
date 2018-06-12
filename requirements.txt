@@ -1,2 +1,8 @@
 gunicorn==19.7.1
 requests==2.18.4
+pandas
+bokeh
+dill
+flask
+pip
+
